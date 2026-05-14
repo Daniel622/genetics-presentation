@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>遗传学大探秘！ - 科学课PPT</title>
+  
+  <meta name="description" content="充满活力、有趣的六年级科学课遗传学科普PPT">
+
+  <!-- Reveal.js 核心 CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reset.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/theme/black.min.css" id="theme">
+  
+  <!-- 引入 Google Fonts 让字体更活泼 -->
+  <link href="https://fonts.googleapis.com/css2?family=ZCOOL+KuaiLe&family=Nunito:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <!-- 自定义样式，使其充满活力 -->
+  <style>
+    .reveal {
+      font-family: 'Nunito', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .reveal h1, .reveal h2, .reveal h3, .reveal h4, .reveal h5, .reveal h6 {
+      font-family: 'ZCOOL KuaiLe', cursive, sans-serif; /* 活泼的标题字体 */
+      text-transform: none;
+      letter-spacing: 2px;
+      text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    }
+    .reveal p, .reveal li {
+      font-size: 1.2em;
+      line-height: 1.6;
+    }
+    .pop-text {
+      color: #a8ff78; 
+      font-weight: bold; 
+      font-size: 1.3em;
+      text-shadow: 1px 1px 2px #000;
+    }
+    .highlight-yellow {
+      color: #ffde00;
+      font-weight: bold;
+    }
+    .fun-box {
+      background: rgba(255, 255, 255, 0.15);
+      border-radius: 20px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+      backdrop-filter: blur(5px);
+    }
+    .cute-img {
+      height: 320px;
+      border-radius: 20px;
+      box-shadow: 0 15px 25px rgba(0,0,0,0.4);
+      margin: 20px 0 !important;
+      border: 4px solid white;
+    }
+    .punnett-table {
+      margin: 20px auto !important;
+      border-collapse: collapse;
+      color: white;
+      font-size: 1.2em;
+    }
+    .punnett-table td, .punnett-table th {
+      border: 3px solid white !important;
+      padding: 20px 30px !important;
+      text-align: center;
+    }
+    .flex-container {
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      gap: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      
+      <!-- Slide 1: 封面 -->
+      <section data-background-color="#8e44ad" data-transition="zoom">
+        <h1 style="color: #a8ff78; font-size: 3em; margin-bottom: 20px;">遗传学大探秘！</h1>
+        <h3 style="color: white; margin-bottom: 40px;">解开生命的小秘密 🧬</h3>
+        <div class="fun-box" style="display: inline-block;">
+          <p style="color: #ffde00; font-size: 1.5em; margin: 0; font-weight: 900;">你的专属科学向导</p>
+        </div>
+      </section>
+
+      <!-- Slide 2: 什么是DNA？ -->
+      <section data-background-color="#3498db" data-transition="slide">
+        <h2 class="highlight-yellow">什么是DNA？</h2>
+        <img src="images/lego_dna_manual.png" alt="Lego DNA Manual" class="cute-img">
+        <p>想象一下，你是一台 <b>无敌超级机器</b>！</p>
+        <p>DNA 就是拼装你的 <span class="pop-text">乐高说明书 🧱</span></p>
+        <p class="fragment">它包含了让你成为“你”的所有秘密指令！</p>
+      </section>
+
+      <!-- Slide 3: 基因 -->
+      <section data-background-color="#e67e22" data-transition="slide">
+        <h2 style="color: white;">基因：你的专属“小厨谱”</h2>
+        <div class="fun-box" style="margin-top: 30px;">
+          <p>如果 DNA 是一本厚厚的大书...</p>
+          <p>那么 <b>基因（Gene）</b> 就是书里的一篇篇 <span class="pop-text">小厨谱 🍳</span></p>
+          <ul style="color: white; margin-top: 20px;">
+            <li class="fragment">有的厨谱决定了你的眼睛是黑的还是蓝的 👀</li>
+            <li class="fragment">有的决定了你能不能卷舌头 👅</li>
+            <li class="fragment">有的决定了你是不是天生自来卷 👩‍🦱</li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- Slide 4: 染色体 -->
+      <section data-background-color="#2ecc71" data-transition="zoom">
+        <h2 style="color: #8e44ad;">染色体：“超能快递包裹”</h2>
+        <img src="images/super_chromosome_package.png" alt="Chromosome Package" class="cute-img">
+        <p>我们的 DNA 特别特别长！如果全拉直，能有两米多长！😱</p>
+        <p class="fragment">为了塞进小小的细胞里，它们会被紧紧打包成“X”形状的 <br><span class="highlight-yellow" style="font-size: 1.5em;">超能快递包裹 📦</span></p>
+        <p class="fragment" style="font-weight: 900;">这就是 染色体（Chromosome）！</p>
+      </section>
+
+      <!-- Slide 5: 关系总结 -->
+      <section data-background-color="#f1c40f" data-transition="slide">
+        <h2 style="color: #e74c3c;">它们是一家子！</h2>
+        <div class="flex-container fun-box" style="margin-top: 50px; background: rgba(0,0,0,0.1);">
+          <div>
+            <h3 style="color: #2c3e50;">📦 染色体</h3>
+            <p style="color: #34495e; font-weight: bold;">快递箱</p>
+          </div>
+          <div style="font-size: 2.5em; color: #e74c3c;">➡️</div>
+          <div>
+            <h3 style="color: #2c3e50;">📚 DNA</h3>
+            <p style="color: #34495e; font-weight: bold;">超大说明书</p>
+          </div>
+          <div style="font-size: 2.5em; color: #e74c3c;">➡️</div>
+          <div>
+            <h3 style="color: #2c3e50;">🍳 基因</h3>
+            <p style="color: #34495e; font-weight: bold;">一页小厨谱</p>
+          </div>
+        </div>
+        <p class="fragment" style="margin-top: 40px; font-weight: bold; color: #e74c3c; font-size: 1.5em;">它们齐心协力，打造了独一无二的你！</p>
+      </section>
+
+      <!-- Slide 6: 孟德尔爷爷 -->
+      <section data-background-color="#1abc9c" data-transition="slide">
+        <h2 style="color: white;">遇见孟德尔爷爷 👴</h2>
+        <img src="images/mendel_peas.png" alt="Mendel and Peas" class="cute-img">
+        <p>这位是格雷戈尔·孟德尔（Gregor Mendel），<br>我们称他为 <b>“遗传学之父”</b>！</p>
+        <p class="fragment">他没用什么高科技仪器，就靠在花园里 <span class="highlight-yellow" style="font-size: 1.2em;">种豌豆 🌱</span> 发现了遗传的秘密！</p>
+      </section>
+
+      <!-- Slide 7: 豌豆大作战 -->
+      <section data-background-color="#34495e" data-transition="convex">
+        <h2 style="color: #a8ff78;">孟德尔的“豌豆大作战”</h2>
+        <p style="color: white; margin-bottom: 40px;">孟德尔把 <b>纯种黄豌豆</b> 和 <b>纯种绿豌豆</b> 结亲家...猜猜宝宝什么颜色？</p>
+        <div class="fragment fun-box" style="background: rgba(255, 222, 0, 0.2);">
+          <h3 style="color: #ffde00; margin: 0;">竟然全是黄色的！🤯</h3>
+        </div>
+        <p class="fragment" style="color: white; margin-top: 40px;">那么绿色的基因消失了吗？并没有！<br>它们只是 <span style="color: #e74c3c; font-weight: 900; font-size: 1.3em;">“藏”</span> 起来了！</p>
+      </section>
+
+      <!-- Slide 8: 大BOSS vs 安静 -->
+      <section data-background-color="#9b59b6" data-transition="slide">
+        <h2 class="highlight-yellow">大BOSS基因 vs 安静基因</h2>
+        <div class="flex-container" style="margin-top: 40px;">
+          <div class="fun-box" style="flex: 1; border-top: 10px solid #e74c3c;">
+            <h3 style="color: #ffcccc;">🦸‍♂️ 显性性状<br><span style="font-size: 0.6em;">(大BOSS)</span></h3>
+            <p style="color: white;">只要它在，就必须听它的！</p>
+            <p style="color: #ffaaaa; font-size: 0.9em;">(比如豌豆的黄色 Y)</p>
+          </div>
+          <div style="font-size: 3em; color: white; font-weight: bold;">VS</div>
+          <div class="fun-box" style="flex: 1; border-top: 10px solid #3498db;">
+            <h3 style="color: #cceeff;">🥷 隐性性状<br><span style="font-size: 0.6em;">(安静基因)</span></h3>
+            <p style="color: white;">只有大BOSS不在时，它才敢冒泡！</p>
+            <p style="color: #99ddff; font-size: 0.9em;">(比如豌豆的绿色 y)</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Slide 9: 普内特方格 -->
+      <section data-background-color="#e74c3c" data-transition="zoom">
+        <h2 style="color: white;">预测未来的魔法阵 ✨</h2>
+        <h3 class="highlight-yellow">普内特方格 (Punnett Square)</h3>
+        <p style="color: white; font-size: 1.1em;">科学家们有一个神奇的“占卜板”，<br>只要画一个方格，就能算出宝宝长什么样的概率！</p>
+        
+        <table class="punnett-table fragment">
+          <tr>
+            <td style="border: none !important;"></td>
+            <td style="color: #ffde00; font-weight: 900;">Y (爸爸的大BOSS)</td>
+            <td style="color: #a8ff78; font-weight: 900;">y (爸爸的安静基因)</td>
+          </tr>
+          <tr>
+            <td style="color: #ffde00; font-weight: 900;">Y <br><span style="font-size: 0.6em; font-weight: normal;">(妈妈的大BOSS)</span></td>
+            <td>YY <br>💛 (黄色)</td>
+            <td>Yy <br>💛 (黄色)</td>
+          </tr>
+          <tr>
+            <td style="color: #a8ff78; font-weight: 900;">y <br><span style="font-size: 0.6em; font-weight: normal;">(妈妈的安静基因)</span></td>
+            <td>Yy <br>💛 (黄色)</td>
+            <td>yy <br>💚 (绿色)</td>
+          </tr>
+        </table>
+      </section>
+
+      <!-- Slide 10: 基因大竞猜 -->
+      <section data-background-color="#f39c12" data-transition="slide">
+        <h2 style="color: white;">来玩“基因大竞猜”吧！</h2>
+        <div class="fun-box">
+          <p>看上面的魔法阵！如果爸爸是 <b>Yy</b>，妈妈也是 <b>Yy</b>...</p>
+          <p class="fragment" style="color: #2ecc71; font-weight: 900; font-size: 1.6em; margin-top: 30px; text-shadow: 1px 1px 0px #000;">
+            他们的宝宝有 25% 的概率是绿色的！🌱
+          </p>
+          <p class="fragment" style="margin-top: 20px;">
+            没想到吧？两个黄豌豆能生出绿豌豆！<br>这就是安静基因的完美逆袭！😎
+          </p>
+        </div>
+      </section>
+
+      <!-- Slide 11: 惊天冷知识 -->
+      <section data-background-color="#8e44ad" data-transition="concave">
+        <h2 class="highlight-yellow">🤯 惊天冷知识时间！</h2>
+        <img src="images/banana_dna.png" alt="Banana DNA" class="cute-img">
+        <p>你知道吗？如果你提取出你的DNA，再提取出香蕉的DNA...</p>
+        <p class="fragment">你会发现，我们和香蕉有大约 <span class="pop-text" style="font-size: 1.8em;">50%</span> 相同的DNA！🍌</p>
+        <p class="fragment" style="font-size: 0.9em; opacity: 0.8;">（所以，我们一半是香蕉吗？哈哈，并不是哦！因为生命的基础材料都很像！）</p>
+      </section>
+
+      <!-- Slide 12: 总结与问答 -->
+      <section data-background-color="#2c3e50" data-transition="slide">
+        <h2 style="color: #a8ff78;">大总结 & 疯狂提问环节 🙋‍♂️</h2>
+        <div class="fun-box" style="text-align: left; padding-left: 50px;">
+          <ul style="color: white; line-height: 1.8;">
+            <li><b>🧬 DNA、基因、染色体：</b> 构建你的超级说明书体系。</li>
+            <li><b>👴 孟德尔爷爷：</b> 靠种豌豆发现遗传秘密。</li>
+            <li><b>🥷 显性与隐性：</b> 大BOSS与安静基因的较量。</li>
+            <li><b>✨ 普内特方格：</b> 预测未来的魔法阵。</li>
+          </ul>
+        </div>
+        <h3 class="highlight-yellow fragment" style="margin-top: 40px; animation: pulse 2s infinite;">还有什么奇怪的问题想问我吗？</h3>
+      </section>
+
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.3.1/reveal.min.js"></script>
+  <script>
+    Reveal.initialize({
+      hash: true,
+      slideNumber: 'c/t', // 当前页/总页数
+      transition: 'slide', // 默认转场动画
+      center: true, // 垂直居中
+      controlsTutorial: true // 显示控件提示
+    });
+  </script>
+</body>
+</html>
