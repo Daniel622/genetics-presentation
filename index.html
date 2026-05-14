@@ -27,13 +27,18 @@
       text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
     }
     .reveal p, .reveal li {
-      font-size: 1.2em;
-      line-height: 1.6;
+      font-size: 0.9em !important;
+      line-height: 1.4 !important;
+      margin-bottom: 10px !important;
     }
+    .reveal h1 { font-size: 2.2em !important; margin-bottom: 15px !important; }
+    .reveal h2 { font-size: 1.6em !important; margin-bottom: 15px !important; }
+    .reveal h3 { font-size: 1.2em !important; margin-bottom: 10px !important; }
+    
     .pop-text {
       color: #a8ff78; 
       font-weight: bold; 
-      font-size: 1.3em;
+      font-size: 1.1em;
       text-shadow: 1px 1px 2px #000;
     }
     .highlight-yellow {
@@ -46,6 +51,8 @@
       padding: 15px 25px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
       backdrop-filter: blur(5px);
+      max-height: 65vh; /* 防止过高 */
+      overflow-y: auto; /* 超出则允许滚动 */
     }
     .cute-img {
       max-height: 35vh;
