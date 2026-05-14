@@ -55,13 +55,13 @@
       overflow-y: auto; /* 超出则允许滚动 */
     }
     .cute-img {
-      max-height: 35vh;
+      height: 220px; /* 固定像素，依靠 Reveal.js 整体等比缩放 */
       max-width: 90%;
       object-fit: contain;
       border-radius: 20px;
-      box-shadow: 0 15px 25px rgba(0,0,0,0.4);
-      margin: 10px 0 !important;
-      border: 4px solid white;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.4);
+      margin: 5px 0 !important;
+      border: 3px solid white;
     }
     .punnett-table {
       margin: 20px auto !important;
@@ -70,9 +70,10 @@
       font-size: 1.2em;
     }
     .punnett-table td, .punnett-table th {
-      border: 3px solid white !important;
-      padding: 10px 15px !important;
+      border: 2px solid white !important;
+      padding: 5px 10px !important;
       text-align: center;
+      font-size: 0.8em;
     }
     .flex-container {
       display: flex;
@@ -189,9 +190,9 @@
       <section data-background-color="#e74c3c" data-transition="zoom">
         <h2 style="color: white;">预测未来的魔法阵 ✨</h2>
         <h3 class="highlight-yellow">普内特方格 (Punnett Square)</h3>
-        <p style="color: white; font-size: 1.1em;">科学家们有一个神奇的“占卜板”，<br>只要画一个方格，就能算出宝宝长什么样的概率！</p>
+        <p style="color: white; font-size: 0.9em; margin-bottom: 5px;">科学家们有一个神奇的“占卜板”，<br>只要画一个方格，就能算出宝宝长什么样的概率！</p>
         
-        <table class="punnett-table fragment">
+        <table class="punnett-table fragment" style="margin-top: 10px !important;">
           <tr>
             <td style="border: none !important;"></td>
             <td style="color: #ffde00; font-weight: 900;">Y (爸爸的大BOSS)</td>
@@ -254,11 +255,11 @@
   <script>
     Reveal.initialize({
       hash: true,
-      slideNumber: 'c/t', // 当前页/总页数
-      transition: 'slide', // 默认转场动画
-      center: true, // 垂直居中
-      controlsTutorial: true, // 显示控件提示
-      margin: 0.1,
+      slideNumber: 'c/t', 
+      transition: 'slide', 
+      center: true, 
+      controlsTutorial: true, 
+      margin: 0.01,
       width: 960,
       height: 700
     });
