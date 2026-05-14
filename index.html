@@ -43,15 +43,17 @@
     .fun-box {
       background: rgba(255, 255, 255, 0.15);
       border-radius: 20px;
-      padding: 30px;
+      padding: 15px 25px;
       box-shadow: 0 10px 30px rgba(0,0,0,0.2);
       backdrop-filter: blur(5px);
     }
     .cute-img {
-      height: 320px;
+      max-height: 35vh;
+      max-width: 90%;
+      object-fit: contain;
       border-radius: 20px;
       box-shadow: 0 15px 25px rgba(0,0,0,0.4);
-      margin: 20px 0 !important;
+      margin: 10px 0 !important;
       border: 4px solid white;
     }
     .punnett-table {
@@ -62,7 +64,7 @@
     }
     .punnett-table td, .punnett-table th {
       border: 3px solid white !important;
-      padding: 20px 30px !important;
+      padding: 10px 15px !important;
       text-align: center;
     }
     .flex-container {
@@ -121,7 +123,7 @@
       <!-- Slide 5: 关系总结 -->
       <section data-background-color="#f1c40f" data-transition="slide">
         <h2 style="color: #e74c3c;">它们是一家子！</h2>
-        <div class="flex-container fun-box" style="margin-top: 50px; background: rgba(0,0,0,0.1);">
+        <div class="flex-container fun-box" style="margin-top: 20px; background: rgba(0,0,0,0.1);">
           <div>
             <h3 style="color: #2c3e50;">📦 染色体</h3>
             <p style="color: #34495e; font-weight: bold;">快递箱</p>
@@ -137,7 +139,7 @@
             <p style="color: #34495e; font-weight: bold;">一页小厨谱</p>
           </div>
         </div>
-        <p class="fragment" style="margin-top: 40px; font-weight: bold; color: #e74c3c; font-size: 1.5em;">它们齐心协力，打造了独一无二的你！</p>
+        <p class="fragment" style="margin-top: 20px; font-weight: bold; color: #e74c3c; font-size: 1.5em;">它们齐心协力，打造了独一无二的你！</p>
       </section>
 
       <!-- Slide 6: 孟德尔爷爷 -->
@@ -155,13 +157,13 @@
         <div class="fragment fun-box" style="background: rgba(255, 222, 0, 0.2);">
           <h3 style="color: #ffde00; margin: 0;">竟然全是黄色的！🤯</h3>
         </div>
-        <p class="fragment" style="color: white; margin-top: 40px;">那么绿色的基因消失了吗？并没有！<br>它们只是 <span style="color: #e74c3c; font-weight: 900; font-size: 1.3em;">“藏”</span> 起来了！</p>
+        <p class="fragment" style="color: white; margin-top: 20px;">那么绿色的基因消失了吗？并没有！<br>它们只是 <span style="color: #e74c3c; font-weight: 900; font-size: 1.3em;">“藏”</span> 起来了！</p>
       </section>
 
       <!-- Slide 8: 大BOSS vs 安静 -->
       <section data-background-color="#9b59b6" data-transition="slide">
         <h2 class="highlight-yellow">大BOSS基因 vs 安静基因</h2>
-        <div class="flex-container" style="margin-top: 40px;">
+        <div class="flex-container" style="margin-top: 15px;">
           <div class="fun-box" style="flex: 1; border-top: 10px solid #e74c3c;">
             <h3 style="color: #ffcccc;">🦸‍♂️ 显性性状<br><span style="font-size: 0.6em;">(大BOSS)</span></h3>
             <p style="color: white;">只要它在，就必须听它的！</p>
@@ -235,7 +237,7 @@
             <li><b>✨ 普内特方格：</b> 预测未来的魔法阵。</li>
           </ul>
         </div>
-        <h3 class="highlight-yellow fragment" style="margin-top: 40px; animation: pulse 2s infinite;">还有什么奇怪的问题想问我吗？</h3>
+        <h3 class="highlight-yellow fragment" style="margin-top: 20px; animation: pulse 2s infinite;">还有什么奇怪的问题想问我吗？</h3>
       </section>
 
     </div>
@@ -248,7 +250,10 @@
       slideNumber: 'c/t', // 当前页/总页数
       transition: 'slide', // 默认转场动画
       center: true, // 垂直居中
-      controlsTutorial: true // 显示控件提示
+      controlsTutorial: true, // 显示控件提示
+      margin: 0.1,
+      width: 960,
+      height: 700
     });
   </script>
 </body>
